@@ -9,8 +9,9 @@
     position: fixed;
     top:0;
     width:100%;
-    height:10vh;
-    background-color:rgb(202, 126, 202);
+    height:5vh;
+    background-color:#29495E;
+  
 }
 
 .menu{
@@ -25,10 +26,56 @@
 }
 
 .menu__link{
-    color:black;
+    color:#fff;
     text-decoration: none; 
 
 }
+.menu__list:hover{
+    background-color:#6598BE;
+    text-decoration: none;
+
+}
+/* .hero{
+    width:100%;
+    height:100%;
+    display: flex;
+    margin: 0 auto;
+} */
+.hero__svg{
+    background-size:100% 100%;
+}
+#clouds{
+    position: absolute;
+}
+#clouds-one{
+animation:move 15s infinite linear;
+
+}
+#flakes{
+    animation: flakes 15s infinite linear;
+}
+@keyframes move{
+from{
+    transform: translateY(0%)
+}
+to{
+    transform: translateY(30%)
+
+}
+}
+
+@keyframes flakes{
+    from{
+        transform: translateY(-10%)
+    }
+    to{
+        transform: translateY(130%)
+    
+    }
+}
+
+
+
 
 @media screen and (max-width:768px){
 .hamburger__element{
@@ -54,7 +101,7 @@ transform:translate(-5%,-50%);
  z-index: 2;
 }
     .menu{
-        background-color:rgb(202, 126, 202);
+        background-color:#29495E;
         height:100vh;
     width:100%;
 flex-direction: column;
