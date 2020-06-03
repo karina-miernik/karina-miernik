@@ -79,10 +79,10 @@ to{
 
 @media screen and (max-width:768px){
 .hamburger__element{
-    width:2.3rem;
-    height:0.2rem;
+    width:2rem;
+    height:0.15rem;
     background-color:white;
-    margin:0.35rem ;
+    margin:0.3rem ;
 
 }
 .header{
@@ -102,19 +102,32 @@ transform:translate(-5%,-50%);
 }
     .menu{
         background-color:#29495E;
-        height:100vh;
+        height:30vh;
     width:100%;
 flex-direction: column;
-clip-path: circle(100px at 90% -10%);
--webkit-clip-path: circle(100px at 90% -10%);
+clip-path: circle(5vh at 90% -10%);
+-webkit-clip-path: circle(5vh at 90% -10%);
 transition: all .7s ease-out;
 pointer-events:none;
+justify-content: center;
+align-content: right;
 }
 
 .menu.open{
+  
     pointer-events: all;
-    clip-path: circle(1000px at 90% -10%);
--webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(30vh at 80% -10%);
+-webkit-clip-path: circle(30vh at 80% -10%);
+margin-right: auto;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
 }
-
+.menu__list{
+  
+    padding: 0.5rem;
+    margin-left: 70%;
+   
+}
 }
