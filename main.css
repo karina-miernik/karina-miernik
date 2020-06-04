@@ -1,7 +1,13 @@
-* {
+*, *:after, *:before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+  height: 100%;
+  min-width: 200px;
 }
 
 /* Navigation */
@@ -10,7 +16,7 @@
     top:0;
     width:100%;
     height:5vh;
-    background-color:#29495E;
+    background-color:transparent;
   
 }
 
@@ -28,43 +34,116 @@
 .menu__link{
     color:#fff;
     text-decoration: none; 
+    text-transform: uppercase;
 
 }
 .menu__list:hover{
     background-color:#6598BE;
     text-decoration: none;
 
+
 }
-/* .hero{
-    width:100%;
-    height:100%;
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    margin: 0 auto;
-} */
-.hero__svg{
-    background-size:100% 100%;
+    overflow: hidden;
 }
+.hero__svg{
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image:  url(T_3\ 1.svg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+position: relative;
+  }
+
+  svg{
+     position: absolute;
+  }
 #clouds{
     position: absolute;
+    overflow: hidden;
 }
-#clouds-one{
-animation:move 15s infinite linear;
+#cloud-one{
+animation:move1 60s linear infinite;
 
 }
-#flakes{
-    animation: flakes 15s infinite linear;
+
+#clouds-two{
+animation:move2 60s ease-in infinite;
 }
-@keyframes move{
+#cloud-three{
+animation:move3 60s ease-out infinite;
+animation-delay:30s;
+}
+#cloud-four{
+    animation:move4 60s linear infinite;
+    }
+#cloud-five{
+    
+    animation:move5 20s ease-out infinite;
+animation-delay: 5s;
+    }
+#flake-one{
+    animation: flakes1 15s linear infinite;
+       animation-delay: 10s;
+}
+#flake-two{
+    animation: flakes2 30s linear infinite;
+    animation-delay: 5s;
+}
+
+#flake-three{
+    animation: flakes3 15s linear infinite;
+
+} 
+
+
+@keyframes move1{
 from{
-    transform: translateY(0%)
+transform: translateX(90%)
 }
 to{
-    transform: translateY(30%)
-
+transform: translateX(90%)
 }
 }
-
-@keyframes flakes{
+@keyframes move2{
+    from{
+        transform: translateX(0%)
+        }
+        to{
+        transform: translateX(110%)
+        }
+        }
+@keyframes move3{
+    from{
+        transform: translateX(0%)
+        }
+        to{
+        transform: translateX(110%)
+        }
+        }
+@keyframes move4{
+    from{
+        transform: translateX(0%)
+        }
+        to{
+        transform: translateX(110%)
+        }
+        }
+@keyframes move5{
+    from{
+        transform: translateX(-10%)
+    }
+    to{
+        transform: translateX(130%)
+    }
+    }
+@keyframes flakes1{
     from{
         transform: translateY(-10%)
     }
@@ -74,14 +153,94 @@ to{
     }
 }
 
+@keyframes flakes2{
+    from{
+        transform: translateY(-10%)
+    }
+    to{
+        transform: translateY(130%)
+    
+    }
+}
+@keyframes flakes3{
+    from{
+        transform: translateY(0%)
+    }
+    to{
+        transform: translateY(100%)
+    
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
 
-
+.about__section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    line-height: 2rem;
+}
+.photo, .part1{
+    margin:0 auto;
+    padding-top:61%;
+    width:80%;
+    height:auto;
+    overflow: hidden;
+}
+.contact{
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+   width:100%;
+   height:300px;
+    background-color: #29495E;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+z-index: 2;
+overflow: hidden;
+}
+.intersection{
+    position:relative;
+    width:100%;
+}
+.skewed:before{
+    position: absolute;
+    top:-5vh;
+    left:0;
+    height:200px;
+    content:'';
+    width:60%;
+    transform: skewY(10deg);
+    background-color: #29495E;
+}
+.skewed:after{
+    position: absolute;
+    top:-5vh;
+    right:0;
+    height:200px;
+    content:'';
+    width:60%;
+    transform: skewY(-10deg);
+    background-color: #29495E;
+}
+/* ------------------------------------- */
 
 @media screen and (max-width:768px){
 .hamburger__element{
     width:2rem;
     height:0.15rem;
-    background-color:white;
+    background-color:#29495E;
     margin:0.3rem ;
 
 }
@@ -91,6 +250,7 @@ to{
 }
 .navigation{
    position: relative;
+   background-color: transparent;
 }
 .hamburger{
 position: absolute;
@@ -101,7 +261,7 @@ transform:translate(-5%,-50%);
  z-index: 2;
 }
     .menu{
-        background-color:#29495E;
+        background-color:transparent;
         height:30vh;
     width:100%;
 flex-direction: column;
@@ -123,11 +283,16 @@ display: flex;
 flex-direction: column;
 align-content: center;
 justify-content: center;
+
+
 }
 .menu__list{
-  
+   
     padding: 0.5rem;
     margin-left: 70%;
    
+}
+.menu__link{
+    color:#29495E;
 }
 }
