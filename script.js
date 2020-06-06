@@ -75,3 +75,9 @@ function scrollTo(to, duration) {
     });
 }
 
+// ----------- Title animation -----------//
+
+const pathUp = document.querySelectorAll('#up path')
+for (i = 0; i < pathUp.length; i++) {
+    console.log(`letter ${i} is ${pathUp[i].getTotalLength()}`)
+}
