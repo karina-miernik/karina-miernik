@@ -77,7 +77,23 @@ function scrollTo(to, duration) {
 
 // ----------- Title animation -----------//
 
-const pathUp = document.querySelectorAll('#up path')
-for (i = 0; i < pathUp.length; i++) {
-    console.log(`letter ${i} is ${pathUp[i].getTotalLength()}`)
-}
+document.addEventListener('DOMContentLoaded', () => {
+    function animateSgv(id, delay, delayIncrement) {
+        const logo = document.getElementById(id);
+        const logoPaths = document.querySelectorAll(`#${id} path`);
+        delay = delay;
+        for (let i = 0; i < logoPaths.length; i++) {
+            //console.log(logoPaths[i].getTotalLength());
+            logoPaths[i].style.strokeDasharray = logoPaths[i].getTotalLength();
+            logoPaths[i].style.strokeDashoffset = logoPaths[i].getTotalLength();
+            logoPaths[i].style.animation = `line-anim 2s ease forwards ${delay}s`;
+            delay += delayIncrement;
+            console.log(delay)
+        }
+        logo.style.animation = `fill 0.5s ease forwards ${delay}s`;
+    }
+    animateSgv('logo', 0.1, 0.1)
+}, false);
+
+// ----------- Navigation - toggle class -----------//
+const nav = document.querySelector('.navigation')
