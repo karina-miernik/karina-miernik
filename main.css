@@ -288,23 +288,105 @@ svg {
 /* Skills */
 .skills {
   display: flex;
-  background-color: #6598be;
-  height: 100vh;
+  background-color: #142530;
+  color:#fff;
 
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.skills__wrapper{
+display:flex;
+flex-wrap:nowrap;
+  flex-direction: row;
+justify-content: center;
+align-items:center;
+
+padding:1rem;
+width:80%;
+}
+.skills__content{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+}
+.skills__title{
+  font-size:3rem;
+  flex-direction: column;
+  padding:2rem;
+}
+.left__title, .right__title{
+  text-align: center;
+}
+.skills__right, .skills__left{
+
+  width:50%;
+
+  margin:3rem;
+}
+.skills__icon{
+text-align: center;
+  font-size:4rem;
+  color:#fff;
+  padding:2rem;
+}
+.skills__icon p{
+  font-size:1.5rem;
+  text-align: center;
+}
+
+.fa-html5{
+  color:#e34f26;
+
+}
+.fa-css3-alt{
+  color:#264de4;
+}
+
+.fa-js{
+  color:#F0DB4F;
+  background-color:#323330;
+}
+.fa-git-alt{
+  color:#F1502F;
+}
+.fa-jira{
+  color:#0052CC;
+}
+
+
+.fa-react{
+  color:#61DBFB;
+}
+
+.fa-node{
+  color:#68A063;
+}
+
+.fa-angular{
+  color:#dd1b16;
+}
+
+.right__title, .left__title{
+  color:#fff;
+  font-size:2rem;
 }
 
 /* Contact */
 .contact {
   display: flex;
   flex-direction: column;
-  height: 50vh;
-  background-color: #29495e;
-
+  height: 100vh;
+color: #fff;
+font-size:2rem;
+text-transform: uppercase;
   justify-content: center;
   align-items: center;
-  background-image: url(/forest.jpg);
+  background-image: url(/img/mountain.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -312,11 +394,14 @@ svg {
 }
 
 .contact__down {
-  height: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 5vh;
+
   width: 100vw;
-  background-color: #29495e;
+  background-color: #142530;
   color: #fff;
-  position: absolute;
+
   bottom: 0;
   text-align: center;
   justify-content: center;
