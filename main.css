@@ -304,7 +304,7 @@ text-align: center;
 /* Skills */
 .skills {
   display: flex;
-  background-color: #142530;
+  background-color: #29495E;
   color:#fff;
   justify-content: center;
   align-items: center;
@@ -333,11 +333,16 @@ width:80%;
   font-size:3rem;
   flex-direction: column;
   padding:2rem;
+  letter-spacing: 1rem;
 }
 .left__title, .right__title{
   text-align: center;
+
+
+  
 }
 .skills__right, .skills__left{
+  position: relative;
 
   width:50%;
 
@@ -348,6 +353,10 @@ text-align: center;
   font-size:4rem;
   color:#fff;
   padding:2rem;
+}
+
+.skills__icon:hover{
+  transform:scale(1.1)
 }
 .skills__icon p{
   font-size:1.5rem;
@@ -396,7 +405,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
-color: #fff;
+color: #ccc;
 font-size:2rem;
 text-transform: uppercase;
   justify-content: center;
@@ -406,6 +415,37 @@ text-transform: uppercase;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  letter-spacing: 1rem;
+
+}
+.contact__title{
+  position:absolute;
+  top:15%;
+  color:black;
+}
+.contact__wrapper{
+  top:60%;
+  position: absolute;
+  color:#fff;
+  font-size: var(--font-size-3)
+}
+.contact__icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:100%;
+  align-items:center;
+  padding:4rem;
+  font-size:4rem;
+}
+
+.contact__icons a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.contact__icons a:hover{
+transform:scale(1.1);
 }
 
 .contact__down {
