@@ -96,6 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
 }, false);
 
 // ----------- Navigation - toggle class -----------//
-const nav = document.querySelector('.navigation')
+
+const nav = document.getElementById("nav");
+
+window.onscroll = function () {
+    "use strict";
+    if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
+        nav.classList.add("scroll");
+    } else {
+        nav.classList.remove("scroll");
+    }
+};
+
 
 
