@@ -16,6 +16,7 @@ body {
   font-family: var(--primary-font);
   width: 100vw;
   height: 100vh;
+background-color: #29495E;
 }
 /* Container */
 
@@ -196,9 +197,21 @@ svg {
 
 .about {
   display: flex;
-  padding: 5%;
   height: 100vh;
+  padding:5%;
   position: relative;
+}
+
+.about__wrapper{
+  display: flex;
+  flex-direction: row;
+  background-color:#fff;
+  padding:1rem;
+  width:90%;
+
+  position: relative;
+  margin:0 auto;
+
 }
 .about__frame {
   width: 35%;
