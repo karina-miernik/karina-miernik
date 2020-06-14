@@ -15,7 +15,7 @@ html {
 body {
   font-family: var(--primary-font);
 
-background-color: #F4EAE2;
+background-color: #FDF8F0;
 }
 /* Container */
 
@@ -65,7 +65,7 @@ background-color: rgba(255, 255, 255, 0.8);
 .menu__link {
     color:#29495e;
   text-decoration: none;
-  text-transform: uppercase;
+  
   font-size: var(--font-size-3);
   transition: all .2s ease-in-out;
 }
@@ -120,33 +120,6 @@ background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
-svg {
-  position: absolute;
-}
-/* Animations in hero */
-#cloud-one,
-#clouds-two,
-#cloud-three,
-#cloud-four,
-#cloud-five {
-  animation: clouds 4s infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes clouds {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-
 
 /* About */
 
@@ -176,52 +149,7 @@ svg {
   justify-content: center;
   align-items:center;
   }
-.about__frame {
-  width: 35%;
-  height: 50%;
-  position: absolute;
-  top:50%;
-  transform: translate(0,-50%)
-}
-.about__frame span:nth-child(1){
- 
-  height:0.5rem;
-  position: absolute;
-  animation: lines 1.5s linear forwards 1s;
-}
-@keyframes lines{
-  from{
-    background-color:transparent;
-  }
-  to{
-    background-color:pink;
-  }
-}
-.about__frame span:nth-child(2){
 
-  width:0.5rem;
-  position: absolute;
-  top:0;
-  left:0;
-  animation: lines 1.5s linear forwards 1.6s;
-}
-.about__frame span:nth-child(3){
-  
-  height:0.5rem;
-  position: absolute;
-  bottom:0;
-  right:0;
-  animation: lines 1.5s linear forwards 1.4s;
-
-}
-.about__frame span:nth-child(4){
-  
-  width:0.5rem;
-  position: absolute;
-  bottom:0;
-  right:0;
-  animation: lines 1.5s linear forwards 1.2s;
-}
 
 .about__title {
   width: 50%;
@@ -230,9 +158,7 @@ svg {
   justify-content: center;
   align-items: center;
   font-size: var(--font-size-2);
-  margin: 2rem;
-  top: 0;
-  position: sticky;
+
 }
 .about__right {
   width: 55%;
@@ -270,7 +196,6 @@ svg {
   justify-content: center;
 align-self: center;
 text-align: justify;
-animation: text 3s linear forwards 1;
 color:black;
 }
 
@@ -483,7 +408,10 @@ top:5%;
     position: relative;
     background-color: transparent;
   }
-
+  .container {
+    background-image: url(/img/4.png);
+    background-size: cover;
+  }  
   #logo{
    
     transform: scale(1.2);
@@ -533,10 +461,6 @@ top:5%;
   .menu.open {
     clip-path: circle(1500px at 90% -10%);
     -webkit-clip-path: circle(1500px at 90% -10%);
-
-    /* padding-top:3rem;
-  padding-right:1rem;
-  padding-bottom:3rem; */
     pointer-events: all;
     display: flex;
     flex-direction: column;
