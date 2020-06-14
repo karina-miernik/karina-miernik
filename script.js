@@ -98,10 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // ----------- Navigation - toggle class -----------//
 
 const nav = document.getElementById("nav");
-
 window.onscroll = function () {
     "use strict";
-    if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
+    if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
         nav.classList.add("scroll");
     } else {
         nav.classList.remove("scroll");
