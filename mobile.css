@@ -1,5 +1,10 @@
-@media screen and (max-width: 992px) {
-    .header {
+@media screen and (max-width: 1024px) {
+  body,html{
+    padding: 0;
+    margin:0;
+    width:100%;
+  }  
+  .header {
       position: sticky;
       top: 0;
     }
@@ -10,6 +15,8 @@
     .container {
       background-image: url(/img/4.png);
       background-size: cover;
+      position: relative;
+      width:100%;
     }  
     #logo{
      
@@ -87,17 +94,16 @@
       width: 50%;
     }
     .hero__title svg {
-      width: 90%;
+      width: 95%;
     }
     .illustration{
-      order: 2;
-      position: relative;
-      margin-top: 50%;
-    
-
+      margin: 5vw 0;
     }
+
     .about{
-      margin:6rem 0 5rem 0;
+      z-index: -2;
+      position: relative;
+      margin-top:6rem; 
     }
   .about__wrapper{
     flex-direction: column;
@@ -112,7 +118,7 @@
   
     }
     .skills{
-      margin-top:6vw;
+      margin-top:6rem;
     }
     .contact__wrapper{
   text-align: center;
