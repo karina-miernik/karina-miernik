@@ -118,6 +118,7 @@ body{
     }
     .about{
       height: auto;
+      margin:0;
      
     }
   .about__wrapper{
