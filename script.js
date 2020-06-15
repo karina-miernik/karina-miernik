@@ -5,20 +5,19 @@ const hamburgerOpen = document.querySelector('.hamburger')
 const hamburgerElement = document.querySelector('.hamburger__element')
 const menu = document.querySelector('.menu')
 const menuLink = document.querySelectorAll('.menu__link')
-
+const headerLogo = document.querySelector('.header__logo')
 
 hamburgerOpen.addEventListener('click', () => {
     menu.classList.toggle('open')
     hamburgerOpen.classList.toggle('change')
+    headerLogo.classList.toggle('none')
 
 })
-
-
-
 
 for (let i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener("click", () => {
         menu.classList.remove('open')
+        menu.classList.remove('change')
     });
 }
 

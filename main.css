@@ -39,11 +39,32 @@ margin:0;
   height:100px;
   z-index: 3;
   position: relative;
+  display:flex;
+  flex-direction:row;
+}
+.header__logo{
+  position: relative;
+  display: flex;
+  text-align: center;
+
+  justify-content:center;
+  align-self: center;
+  padding:.5rem;
+  width:30%;
+  height:100%;
+  margin-top:auto; 
+
+}
+.logo__link{
+  color:black;
+  font-size:var(--font-size-4);
+  text-decoration: none;
+ 
 }
 .navigation {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: transparent;
   transition: all .2s ease-in-out;
 }
@@ -405,7 +426,7 @@ color:black;
 
 .contact__down {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   height: 100px;
   width: 100%;
   color: black;
@@ -415,6 +436,10 @@ color:black;
   align-items: center;
   position: absolute;
   font-size: var(--font-size-2);
+}
+.contact__down i{
+  color:black;
+  padding:0.25rem;
 }
 
 

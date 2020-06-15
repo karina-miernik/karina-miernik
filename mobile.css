@@ -8,7 +8,7 @@ body{
       top: 0;
     }
     .navigation {
-      position: relative;
+      position: fixed;
       background-color: transparent;
     }
     .container {
@@ -51,6 +51,9 @@ body{
     .change .burger2 {
       
       opacity: 0;
+    }
+    .header__logo .none{
+      display:none;
     }
     .change {
       display: block;
