@@ -17,7 +17,7 @@ hamburgerOpen.addEventListener('click', () => {
 for (let i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener("click", () => {
         menu.classList.remove('open')
-        menu.classList.remove('change')
+        hamburgerOpen.classList.remove('change')
     });
 }
 
