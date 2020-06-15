@@ -98,19 +98,27 @@ body{
       width: 95%;
     }
     .illustration{
+      content:"";
+      height:50vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-   
-      text-align: left;
+  
       margin: 10vw 0;
       position: relative;
     }
+    .illustration:after{
+  
+      position: absolute;
+      bottom: 25vw;
+  left:-15vw;
 
+    }
     .about{
-      margin:10rem 0; 
+      height: auto;
+     
     }
   .about__wrapper{
     flex-direction: column;
@@ -128,7 +136,8 @@ body{
       width:100%;
     }
     .skills{
-      margin-top:6rem;
+      
+      height:auto;
     }
     .contact__wrapper{
   text-align: center;

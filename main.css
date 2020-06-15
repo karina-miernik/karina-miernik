@@ -414,5 +414,9 @@ color:black;
   padding:0.25rem;
 }
 
+.contact__down i:hover{
+  color: #E8D4E6;
+}
+
 
 
