@@ -3,12 +3,12 @@
 *:before {
   padding: 0;
   margin: 0;
+  box-sizing:border-box;
 }
-*, :after, :before {
-  box-sizing: inherit;
-}
+
 body,
 html {
+
 
   width: 100%;
   height: 100%;
@@ -16,7 +16,7 @@ html {
 }
 body {
   font-family: 'Lora',serif;
-
+  min-width: 200px;
 background-color: #FDF8F0;
 }
 /* Container */
@@ -181,10 +181,19 @@ background-color: rgba(255, 255, 255, 0.8);
   max-height: 100%;
 border-radius: 70% 26% 53% 57% / 57% 41% 42% 48%;
 }
+.img__wrapper svg{
+  vertical-align: middle;
+ 
+  width: 100%;
+ position: absolute;
+ right:-90%;
+ top:5%;
 
+
+}
 .about__left{
   font-size: var(--font-size-3);
-  height: 100%;
+ 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -192,7 +201,7 @@ border-radius: 70% 26% 53% 57% / 57% 41% 42% 48%;
 align-self: center;
 text-align: justify;
 color:black;
-margin-left: 6rem;
+margin-left: 6vw;
 }
 
 .about__content h2{
@@ -208,8 +217,7 @@ margin-left: 6rem;
   width: 100%;
   text-align: left;
   margin: 9vw 0;
-  position: relative;
-  
+  position: relative; 
 }
 .illustration:after{
   content: "";
@@ -266,7 +274,7 @@ left:-15vw;
   font-size:3rem;
   flex-direction: column;
   padding:2rem;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
 }
 .left__title, .right__title{
   text-align: center; 
@@ -343,6 +351,7 @@ font-size:var(--font-size-3);
 }
 
 .contact__wrapper{
+  word-break: break-all;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -351,10 +360,10 @@ align-content: center;
   color:black;
   position: relative;
   padding-top:4rem;
-  width:100vw;
+  width:100%;
 }
 .contact__wrapper h2{
-padding-bottom: 2vw;
+padding-bottom: 4vw;
 }
 .contact__img{
   display:flex;
@@ -408,139 +417,5 @@ color:black;
   font-size: var(--font-size-2);
 }
 
-/* ------------------------------------- */
 
-@media screen and (max-width: 768px) {
-  .header {
-    position: sticky;
-    top: 0;
-  }
-  .navigation {
-    position: relative;
-    background-color: transparent;
-  }
-  .container {
-    background-image: url(/img/4.png);
-    background-size: cover;
-  }  
-  #logo{
-   
-    transform: scale(1.2);
-  }
 
-  .hamburger {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(-5%, -50%);
-    cursor: pointer;
-    z-index: 2;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    z-index:5000;
-  }
-  .hamburger__element {
-    width: 24px;
-    height: 2px;
-    background-color: #323140;
-    margin: 6px;
-    transition: 0.2s ease-in;
-  }
-  .change .burger1 {
-    background-color: #E8D4E6;
-    transform: translateY(6px) rotateZ(-45deg);
-  }
-  .change .burger3 {
-    background-color: #E8D4E6;
-
-    transform: translateY(-10px) rotateZ(45deg);
-  }
-  .change .burger2 {
-    
-    opacity: 0;
-  }
-  .change {
-    display: block;
-  }
-  .menu {
-    height: 100vh;
-    transition: all 0.2s ease-in;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(10px at 90% -10%);
-    -webkit-clip-path: circle(10px at 90% -10%);
-    pointer-events: none;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .menu.open {
-    clip-path: circle(1500px at 90% -10%);
-    -webkit-clip-path: circle(1500px at 90% -10%);
-    pointer-events: all;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #323140;
-    /* background: rgba(255, 255, 255, 0.8); */
-  }
-  .menu__list {
-    padding: 4rem;
-  }
-  .menu__link {
-    color: #E8D4E6;
-    font-size: 2rem;
-    text-align: center;
-  }
-  .menu__link:hover{
-    border-bottom:1px solid #E8D4E6;
-  }
-  .hero__title {
-    width: 50%;
-  }
-  .hero__title svg {
-    width: 90%;
-  }
-  .about{
-    margin-top:6vw;
-  }
-.about__wrapper{
-  flex-direction: column;
-  width:90%;
-}
-  .about__right, .about__left{
-    width:100%;
-  }
-  .about__left{
-    margin-top:20vw;
-    margin-left: 0;
-  }
-  .contact__wrapper{
-text-align: center;
-  flex-direction: column;
-      justify-content: center;
-      width:90%;
-  }
-  .contact__img {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  
-  }
-  .contact__img svg{
-
-    vertical-align: middle;
-      max-width: 100%;
-   
-      transform: scale(1.5);
-  }
-  .contact__me,
-  .contact__location,
-  .contact__media{
-    padding: 2rem;
-    margin:0 auto;
-    width: 90%;
-    text-align: center;
-  }
-}
