@@ -10,7 +10,7 @@ const headerLogo = document.querySelector('.header__logo')
 hamburgerOpen.addEventListener('click', () => {
     menu.classList.toggle('open')
     hamburgerOpen.classList.toggle('change')
-    headerLogo.classList.toggle('none')
+
 
 })
 
