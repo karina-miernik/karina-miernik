@@ -3,6 +3,7 @@
     height: 100%;
     width: 100%;
   }
+  /* Header */
   .header {
     position: fixed;
     top: 0;
@@ -16,9 +17,7 @@
     background-size: cover;
   }
 
-  #logo {
-    transform: scale(1.2);
-  }
+  /* Menu */
 
   .hamburger {
     position: absolute;
@@ -76,7 +75,6 @@
     flex-direction: column;
     justify-content: center;
     background-color: #323140;
-    /* background: rgba(255, 255, 255, 0.8); */
   }
   .menu__list {
     padding: 4rem;
@@ -89,13 +87,17 @@
   .menu__link:hover {
     border-bottom: 1px solid #e8d4e6;
   }
+  /* Title */
   .hero__title {
     width: 50%;
   }
   .hero__title svg {
     width: 95%;
   }
-
+  #logo {
+    transform: scale(1.2);
+  }
+  /* About */
   .about {
     height: auto;
     margin: 0;
@@ -116,9 +118,11 @@
   .about__content {
     width: 100%;
   }
+  /* Skills */
   .skills {
     height: auto;
   }
+  /* Contact */
   .contact__wrapper {
     text-align: center;
     flex-direction: column;
