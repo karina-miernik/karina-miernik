@@ -95,22 +95,9 @@ document.addEventListener(
   false,
 )
 
-// ----------- Navigation - toggle class -----------//
+// ----------- Navigation - toggle class & Arrow Up-----------//
 
 const nav = document.getElementById('nav')
-window.onscroll = function () {
-  'use strict'
-  if (
-    document.body.scrollTop >= 80 ||
-    document.documentElement.scrollTop >= 80
-  ) {
-    nav.classList.add('scroll')
-  } else {
-    nav.classList.remove('scroll')
-  }
-}
-
-// ----------- Arrow Up -----------//
 const arrow = document.querySelector('.scroll__up')
 
 window.onscroll = function () {
@@ -119,9 +106,11 @@ window.onscroll = function () {
     document.body.scrollTop >= 80 ||
     document.documentElement.scrollTop >= 80
   ) {
+    nav.classList.add('scroll')
     arrow.classList.add('scroll__display')
     arrow.classList.remove('scroll__up')
   } else {
+    nav.classList.remove('scroll')
     arrow.classList.remove('scroll__display')
     arrow.classList.add('scroll__up')
   }
