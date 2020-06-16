@@ -140,10 +140,6 @@ body {
 .about__right {
   width: 55%;
 }
-.about__left {
-  width: 35%;
-  margin: 0;
-}
 
 .img__wrapper {
   width: 100%;
@@ -184,6 +180,8 @@ body {
   text-align: justify;
   color: black;
   margin-left: 6vw;
+  width: 35%;
+  margin: 0;
 }
 
 .about__content h2 {
