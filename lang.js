@@ -90,6 +90,10 @@ let MLstrings = [
         English: "Gdańsk, Poland",
         Polish: "Gdańsk, Polska"
 
+    },
+    {
+        English: "Contact",
+        Polish: "Kontakt"
     }
 ];
 
