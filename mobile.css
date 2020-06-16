@@ -95,23 +95,7 @@
   .hero__title svg {
     width: 95%;
   }
-  .illustration {
-    content: '';
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 
-    margin: 10vw 0;
-    position: relative;
-  }
-  .illustration:after {
-    position: absolute;
-    bottom: 25vw;
-    left: -15vw;
-  }
   .about {
     height: auto;
     margin: 0;
