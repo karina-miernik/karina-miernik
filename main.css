@@ -372,8 +372,15 @@ body {
   margin-left: 6vw;
 }
 
-.contact__media i {
+.fa-github {
   font-size: 2rem;
+  color: black;
+  padding: 0.25rem;
+  transition: all 0.3s ease;
+}
+.fa-github:hover {
+  color: #e8d4e6;
+  transform: scale(1.2);
 }
 .contact__media a {
   text-decoration: none;
@@ -393,11 +400,8 @@ body {
   position: absolute;
   font-size: var(--font-size-2);
 }
-.contact__down i {
-  color: black;
-  padding: 0.25rem;
-}
 
+/* Arrow Up*/
 .scroll__display {
   background-color: #fff;
   border-radius: 50%;

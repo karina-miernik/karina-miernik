@@ -1,170 +1,162 @@
 @media screen and (max-width: 1024px) {
-body{
-  height:100%;
-  width:100%;
-}
+  body {
+    height: 100%;
+    width: 100%;
+  }
   .header {
-      position: fixed;
-      top: 0;
-    }
-    .navigation {
-      position: fixed;
-      background-color: transparent;
-    }
-    .container {
-      background-image: url(/img/4.png);
-      background-size: cover;  
-    }  
-
-    #logo{
-     
-      transform: scale(1.2);
-    }
-  
-    .hamburger {
-      position: absolute;
-      top: 50%;
-      right: 5%;
-      transform: translate(-5%, -50%);
-      cursor: pointer;
-      z-index: 2;
-      margin-top: 0.5rem;
-      margin-right: 0.5rem;
-      background-color: #fff;
-      border-radius: 50%;
-      padding:1rem;
-    
-    }
-    .hamburger__element {
-      width: 24px;
-      height: 2px;
-      background-color: #323140;
-      margin: 6px;
-      transition: 0.2s ease-in;
-    }
-    .change .burger1 {
-      background-color: #E8D4E6;
-      transform: translateY(6px) rotateZ(-45deg);
-    }
-    .change .burger3 {
-      background-color: #E8D4E6;
-  
-      transform: translateY(-10px) rotateZ(45deg);
-    }
-    .change .burger2 { 
-      opacity: 0;
-    }
-
-    .change {
-      display: block;
-    }
-    .menu {
-      height: 100vh;
-      transition: all 0.2s ease-in;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(10px at 90% -10%);
-      -webkit-clip-path: circle(10px at 90% -10%);
-      pointer-events: none;
-      justify-content: center;
-      align-content: center;
-    }
-  
-    .menu.open {
-      clip-path: circle(1500px at 90% -10%);
-      -webkit-clip-path: circle(1500px at 90% -10%);
-      pointer-events: all;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #323140;
-      /* background: rgba(255, 255, 255, 0.8); */
-    }
-    .menu__list {
-      padding: 4rem;
-    }
-    .menu__link {
-      color: #E8D4E6;
-      font-size: 2rem;
-      text-align: center;
-    }
-    .menu__link:hover{
-      border-bottom:1px solid #E8D4E6;
-    }
-    .hero__title {
-      width: 50%;
-    }
-    .hero__title svg {
-      width: 95%;
-    }
-    .illustration{
-      content:"";
-      height:50vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-  
-      margin: 10vw 0;
-      position: relative;
-    }
-    .illustration:after{
-  
-      position: absolute;
-      bottom: 25vw;
-  left:-15vw;
-
-    }
-    .about{
-      height: auto;
-      margin:0;
-     
-    }
-  .about__wrapper{
-    flex-direction: column;
-    width:90%;
+    position: fixed;
+    top: 0;
   }
-    .about__right, .about__left{
-      width:100%;
-    }
-    .about__left{
-      width:100%;
-      margin:5rem 0;
-
-    }
-    .about__content{
-      width:100%;
-    }
-    .skills{
-      
-      height:auto;
-    }
-    .contact__wrapper{
-  text-align: center;
-    flex-direction: column;
-        justify-content: center;
-        width:100%;
-    }
-    .contact__img {
-      flex-direction: row;
-      display: flex;
-      align-items: center;
-      width: 100%;
-    
-    }
-    .contact__img svg{
-  
-      vertical-align: middle;
-        max-width: 100%;
-    }
-    .contact__me,
-    .contact__location,
-    .contact__media{
-      padding: 3vw;
-      margin:0 auto;
-      width: 90%;
-      text-align: center;
-    }
+  .navigation {
+    position: fixed;
+    background-color: transparent;
   }
-  
+  .container {
+    background-image: url(/img/4.png);
+    background-size: cover;
+  }
+
+  #logo {
+    transform: scale(1.2);
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .hamburger__element {
+    width: 24px;
+    height: 2px;
+    background-color: #323140;
+    margin: 6px;
+    transition: 0.2s ease-in;
+  }
+  .change .burger1 {
+    background-color: #e8d4e6;
+    transform: translateY(6px) rotateZ(-45deg);
+  }
+  .change .burger3 {
+    background-color: #e8d4e6;
+
+    transform: translateY(-10px) rotateZ(45deg);
+  }
+  .change .burger2 {
+    opacity: 0;
+  }
+
+  .change {
+    display: block;
+  }
+  .menu {
+    height: 100vh;
+    transition: all 0.2s ease-in;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    pointer-events: none;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .menu.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #323140;
+    /* background: rgba(255, 255, 255, 0.8); */
+  }
+  .menu__list {
+    padding: 4rem;
+  }
+  .menu__link {
+    color: #e8d4e6;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .menu__link:hover {
+    border-bottom: 1px solid #e8d4e6;
+  }
+  .hero__title {
+    width: 50%;
+  }
+  .hero__title svg {
+    width: 95%;
+  }
+  .illustration {
+    content: '';
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 10vw 0;
+    position: relative;
+  }
+  .illustration:after {
+    position: absolute;
+    bottom: 25vw;
+    left: -15vw;
+  }
+  .about {
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .about__wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .about__right,
+  .about__left {
+    width: 100%;
+  }
+  .about__left {
+    width: 100%;
+    margin: 5rem 0;
+  }
+  .about__content {
+    width: 100%;
+  }
+  .skills {
+    height: auto;
+  }
+  .contact__wrapper {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact__img {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .contact__img svg {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  .contact__me,
+  .contact__location,
+  .contact__media {
+    padding: 3vw;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+}
