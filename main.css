@@ -179,9 +179,8 @@ body {
   align-self: center;
   text-align: justify;
   color: black;
-  margin-left: 6vw;
   width: 35%;
-  margin: 0;
+  margin:0 6vw;
 }
 
 .about__content h2 {

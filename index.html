@@ -31,10 +31,11 @@
                     <div class="hamburger__element burger3"></div>
                 </div>
                 <ul class="menu">
-                    <li class="menu__list"><a class="menu__link" href="#Home">Home</a></li>
-                    <li class=" menu__list"><a class="menu__link" href="#About">About</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#Skills">Skills</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#Contact">Contact</a></li>
+                    <select id="mbPOCControlsLangDrop"></select>
+                    <li class="menu__list"><a class="menu__link" href="#Home" data-mlr-text>Home</a></li>
+                    <li class=" menu__list"><a class="menu__link" href="#About" data-mlr-text>About</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#Skills" data-mlr-text>Skills</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#Contact" data-mlr-text>Contact</a></li>
                 </ul>
             </div>
 
@@ -161,11 +162,13 @@
 
             <div class="about__left">
                 <div class="about__content" data-aos="fade-left">
-                    <h2>About me.</h2>
-                    <p>By proffesion I am an electrical engineer designing renewables, but I am also at the beginning of
+                    <h2 data-mlr-text>About me.</h2>
+                    <p data-mlr-text>By proffesion I am an electrical engineer designing renewables, but I am also at
+                        the beginning of
                         my journey with programming. </p>
-                    <p> I find frontend developing fascinating and that became my biggest passion.</p>
-                    <p>I'm eager to learn and I'm coding at every possible moment to enhance my skills. I put all my
+                    <p data-mlr-text> I find frontend developing fascinating and that became my biggest passion.</p>
+                    <p data-mlr-text>I'm eager to learn and I'm coding at every possible moment to enhance my skills. I
+                        put all my
                         creativity and soul at each project.</p>
 
                 </div>
@@ -1120,13 +1123,13 @@
 
     </section>
     <section class="skills" id="Skills">
-        <div class="skills__title">
+        <div class="skills__title" data-mlr-text>
             Skills
         </div>
 
         <div class="skills__wrapper">
             <div class="skills__left">
-                <div class="left__title">What I'm good at</div>
+                <div class="left__title" data-mlr-text>What I'm good at</div>
                 <div class="skills__content">
                     <div class="skills__icon">
                         <i class="fab fa-html5"></i>
@@ -1154,7 +1157,7 @@
 
             </div>
             <div class="skills__right">
-                <div class="right__title">What I will be good at</div>
+                <div class="right__title" data-mlr-text>What I will be good at</div>
                 <div class="skills__content">
                     <div class="skills__icon">
                         <i class="fab fa-react"></i>
@@ -1249,15 +1252,15 @@
             <div class="contact__me">
                 <h2>Karina Miernik</h2>
                 <p>Frontend developer </p>
-                <p>Designing and creating </p>
-                <p>with creativity and passion</p>
+                <p data-mlr-text>Designing and creating </p>
+                <p data-mlr-text>with creativity and passion</p>
             </div>
             <div class="contact__location">
-                <h3>Location:</h3>
-                <p>Gdańsk, Poland</p>
+                <h3 data-mlr-text>Location:</h3>
+                <p data-mlr-text>Gdańsk, Poland</p>
             </div>
             <div class="contact__media">
-                <h3>Contact:</h3>
+                <h3 data-mlr-text>Contact:</h3>
 
                 <p> Github: <a href="https://github.com/karina-miernik"><i class="fab fa-github"></i></a> </p>
                 <a href="#">karina.miernik@gmail.com</a>
@@ -1273,6 +1276,7 @@
 
 
     <script src="/script.js"></script>
+    <script src="/lang.js"></script>
     <script>
         AOS.init();
     </script>
