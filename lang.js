@@ -92,8 +92,8 @@ let MLstrings = [
 
     },
     {
-        English: "Contact",
-        Polish: "Kontakt"
+        English: "Contact:",
+        Polish: "Kontakt:"
     }
 ];
 
@@ -136,11 +136,11 @@ let mlr = function (_a) {
         return countryCodeData.find(function (this2Digit) { return this2Digit.name === mlrLangInUse; });
     }
     function resolveAllMLStrings() {
-        var stringsToBeResolved = document.querySelectorAll("[" + stringAttribute + "]");
+        let stringsToBeResolved = document.querySelectorAll("[" + stringAttribute + "]");
         stringsToBeResolved.forEach(function (stringToBeResolved) {
-            let originaltextContent = stringToBeResolved.textContent;
+            let originaltextContent = stringToBeResolved.innerText;
             let resolvedText = resolveMLString(originaltextContent, mLstrings);
-            stringToBeResolved.textContent = resolvedText;
+            stringToBeResolved.innerText = resolvedText;
         });
     }
 };
@@ -153,10 +153,10 @@ function resolveMLString(stringToBeResolved, mLstrings) {
     });
     if (matchingStringIndex) {
         return matchingStringIndex[mlrLangInUse];
-    } else {
-        // If we don't have a match in our language strings, return the original
-        return stringToBeResolved;
-    }
+    } //else {
+    //     // If we don't have a match in our language strings, return the original
+    //     return stringToBeResolved;
+    // }
 }
 mlr({
     dropID: "mbPOCControlsLangDrop",
