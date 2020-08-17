@@ -115,3 +115,47 @@ window.onscroll = function () {
     arrow.classList.add('scroll__up')
   }
 }
+
+// ----------- Toggle class : projects-----------//
+
+const firstProject = document.querySelector('#first-project')
+const secondProject = document.querySelector('#second-project')
+
+const firstLink = document.querySelector('.first-link')
+const secondLink = document.querySelector('.second-link')
+const firstAbout = document.querySelector('.first-about')
+const secondAbout = document.querySelector('.second-about')
+const firstName = document.querySelector('.first-name')
+const secondName = document.querySelector('.second-name')
+firstProject.addEventListener('mouseover', () => {
+  firstProject.classList.add('project__onHover')
+  firstProject.classList.remove('first-project')
+  firstLink.classList.remove('none')
+  firstAbout.classList.remove('none')
+  firstName.classList.add('none')
+})
+
+secondProject.addEventListener('mouseover', () => {
+  secondProject.classList.add('project__onHover')
+  secondProject.classList.remove('second-project')
+  secondLink.classList.remove('none')
+  secondAbout.classList.remove('none')
+  secondName.classList.add('none')
+})
+
+firstProject.addEventListener('mouseout', () => {
+  firstProject.classList.remove('project__onHover')
+  firstLink.classList.add('none')
+  firstProject.classList.add('first-project')
+  firstAbout.classList.add('none')
+  firstName.classList.remove('none')
+})
+
+secondProject.addEventListener('mouseout', () => {
+  secondProject.classList.remove('project__onHover')
+  secondLink.classList.add('none')
+  secondProject.classList.add('second-project')
+
+  secondAbout.classList.add('none')
+  secondName.classList.remove('none')
+})
