@@ -81,16 +81,14 @@ document.addEventListener(
       const logoPaths = document.querySelectorAll(`#${id} path`)
       delay = delay
       for (let i = 0; i < logoPaths.length; i++) {
-        //console.log(logoPaths[i].getTotalLength());
         logoPaths[i].style.strokeDasharray = logoPaths[i].getTotalLength()
         logoPaths[i].style.strokeDashoffset = logoPaths[i].getTotalLength()
-        logoPaths[i].style.animation = `line-anim 2s ease forwards ${delay}s`
+        logoPaths[i].style.animation = `line-anim 1.5s ease forwards ${delay}s`
         delay += delayIncrement
-        console.log(delay)
       }
-      logo.style.animation = `fill 0.5s ease forwards ${delay}s`
+      logo.style.animation = `fill 0.3s ease forwards ${delay}s`
     }
-    animateSgv('logo', 0.1, 0.1)
+    animateSgv('logo', 0.05, 0.1)
   },
   false,
 )
