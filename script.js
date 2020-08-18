@@ -88,7 +88,7 @@ document.addEventListener(
       }
       logo.style.animation = `fill 0.3s ease forwards ${delay}s`
     }
-    animateSgv('logo', 0.05, 0.1)
+    animateSgv('logo', 0, 0.1)
   },
   false,
 )
