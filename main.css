@@ -325,7 +325,7 @@ padding:0.5rem;
 /* Projects */
 .projects {
   display: flex;
-height:100vh;
+/* height:100vh; */
   color: black;
   justify-content: center;
   align-items: center;
