@@ -65,7 +65,9 @@
   }
   
   .menu {
-    height: 100vh;
+   height: 100vh;
+    min-height: 100%;
+    position: fixed;
     transition: all 0.2s ease-in;
     width: 100%;
     flex-direction: column;
@@ -163,5 +165,10 @@
     width: 90%;
     height:auto;
     text-align: center;
+  }
+.skills__title,
+.about__content h2,
+  .projects__title {
+    font-size: 2rem;
   }
 }
