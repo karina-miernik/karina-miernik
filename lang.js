@@ -137,7 +137,7 @@ let MLstrings = [
 let mlrLangInUse
 
 let mlr = function ({
-    dropID = "mbPOCControlsLangDrop",
+    dropID = "languageSelect",
     stringAttribute = "data-mlr-text",
     chosenLang = "English",
     mLstrings = MLstrings,
@@ -149,24 +149,24 @@ let mlr = function ({
     mlrLangInUse = chosenLang;
 
     (function createMLDrop() {
-        let mbPOCControlsLangDrop = document.getElementById(dropID)
+        let languageSelect = document.getElementById(dropID)
 
-        mbPOCControlsLangDrop.innerHTML = ''
+        languageSelect.innerHTML = ''
 
         listOfLanguages.forEach(function (lang) {
             let HTMLoption = document.createElement('option')
             HTMLoption.value = lang
             HTMLoption.textContent = lang
-            mbPOCControlsLangDrop.appendChild(HTMLoption)
+            languageSelect.appendChild(HTMLoption)
 
             if (lang === chosenLang) {
-                mbPOCControlsLangDrop.value = lang
+                languageSelect.value = lang
             }
         })
 
-        mbPOCControlsLangDrop.addEventListener('change', function (e) {
+        languageSelect.addEventListener('change', function (e) {
             mlrLangInUse =
-                mbPOCControlsLangDrop[mbPOCControlsLangDrop.selectedIndex].value
+                languageSelect[languageSelect.selectedIndex].value
             resolveAllMLStrings()
 
             if (countryCodes === true) {
@@ -183,7 +183,7 @@ let mlr = function ({
             if (localStorage.getItem('chosenLang') === 'Polski') {
 
                 mlrLangInUse = localStorage.getItem('chosenLang')
-                mbPOCControlsLangDrop.value = localStorage.getItem('chosenLang')
+                languageSelect.value = localStorage.getItem('chosenLang')
                 mlr.chosenLang = localStorage.getItem('chosenLang')
                 resolveAllMLStrings()
 
@@ -230,7 +230,7 @@ function resolveMLString(stringToBeResolved, mLstrings) {
     }
 }
 mlr({
-    dropID: 'mbPOCControlsLangDrop',
+    dropID: 'languageSelect',
     stringAttribute: 'data-mlr-text',
     chosenLang: 'English',
     mLstrings: MLstrings,
