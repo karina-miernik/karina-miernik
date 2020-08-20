@@ -390,7 +390,7 @@ padding:0.5rem;
 .projects__link a:hover {
   color: #e8d4e6;
   background-color: #323140;
-  box-shadow: 0px 0px 10px 0px #e8d4e6;
+  box-shadow: 0px 0px 5px 0px #e8d4e6;
 }
 .projects__name {
   text-align: center;
@@ -411,7 +411,7 @@ padding:0.5rem;
   font-size: 1.25rem;
 }
 .project__onHover {
-  background-color: #323140 !important;
+  background-color: #323140;
 }
 .none {
   display: none;
