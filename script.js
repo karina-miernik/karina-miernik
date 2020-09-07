@@ -118,13 +118,20 @@ window.onscroll = function () {
 
 const firstProject = document.querySelector('#first-project')
 const secondProject = document.querySelector('#second-project')
+const thirdProject = document.querySelector('#third-project')
 
 const firstLink = document.querySelector('.first-link')
 const secondLink = document.querySelector('.second-link')
+const thirdLink = document.querySelector('.third-link')
+
 const firstAbout = document.querySelector('.first-about')
 const secondAbout = document.querySelector('.second-about')
+const thirdAbout = document.querySelector('.third-about')
+
 const firstName = document.querySelector('.first-name')
 const secondName = document.querySelector('.second-name')
+const thirdName = document.querySelector('.third-name')
+
 firstProject.addEventListener('mouseover', () => {
   firstProject.classList.add('project__onHover')
   firstProject.classList.remove('first-project')
@@ -140,6 +147,13 @@ secondProject.addEventListener('mouseover', () => {
   secondAbout.classList.remove('none')
   secondName.classList.add('none')
 })
+thirdProject.addEventListener('mouseover', () => {
+  thirdProject.classList.add('project__onHover')
+  thirdProject.classList.remove('third-project')
+  thirdLink.classList.remove('none')
+  thirdAbout.classList.remove('none')
+  thirdName.classList.add('none')
+})
 
 firstProject.addEventListener('mouseout', () => {
   firstProject.classList.remove('project__onHover')
@@ -153,7 +167,14 @@ secondProject.addEventListener('mouseout', () => {
   secondProject.classList.remove('project__onHover')
   secondLink.classList.add('none')
   secondProject.classList.add('second-project')
-
   secondAbout.classList.add('none')
   secondName.classList.remove('none')
+})
+
+thirdProject.addEventListener('mouseout', () => {
+  thirdProject.classList.remove('project__onHover')
+  thirdLink.classList.add('none')
+  thirdProject.classList.add('third-project')
+  thirdAbout.classList.add('none')
+  thirdName.classList.remove('none')
 })
