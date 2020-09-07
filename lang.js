@@ -94,8 +94,8 @@ let MLstrings = [
     Polski: 'Aplikacja pogodowa',
   },
   {
-    English: 'Weather App build in React.',
-    Polski: 'Aplikacja pogodowa zbudowana w Reakcie.',
+    English: 'Weather App build in React',
+    Polski: 'Aplikacja pogodowa zbudowana w Reakcie',
   },
   {
     English: 'Visit',
@@ -137,41 +137,24 @@ let mlr = function ({
   let root = document.documentElement
   let listOfLanguages = Object.keys(mLstrings[0])
   mlrLangInUse = chosenLang
-  ;(function createMLDrop() {
-    let languageSelect = document.getElementById(dropID)
+    ; (function createMLDrop() {
+      let languageSelect = document.getElementById(dropID)
 
-    languageSelect.innerHTML = ''
+      languageSelect.innerHTML = ''
 
-    listOfLanguages.forEach(function (lang) {
-      let HTMLoption = document.createElement('option')
-      HTMLoption.value = lang
-      HTMLoption.textContent = lang
-      languageSelect.appendChild(HTMLoption)
+      listOfLanguages.forEach(function (lang) {
+        let HTMLoption = document.createElement('option')
+        HTMLoption.value = lang
+        HTMLoption.textContent = lang
+        languageSelect.appendChild(HTMLoption)
 
-      if (lang === chosenLang) {
-        languageSelect.value = lang
-      }
-    })
-
-    languageSelect.addEventListener('change', function (e) {
-      mlrLangInUse = languageSelect[languageSelect.selectedIndex].value
-      resolveAllMLStrings()
-
-      if (countryCodes === true) {
-        if (!Array.isArray(countryCodeData) || !countryCodeData.length) {
-          console.warn('Cannot access strings for language codes')
-          return
+        if (lang === chosenLang) {
+          languageSelect.value = lang
         }
-        root.setAttribute('lang', updateCountryCodeOnHTML().code)
-      }
-      setLangInStorage()
-    })
+      })
 
-    window.onload = function () {
-      if (localStorage.getItem('chosenLang') === 'Polski') {
-        mlrLangInUse = localStorage.getItem('chosenLang')
-        languageSelect.value = localStorage.getItem('chosenLang')
-        mlr.chosenLang = localStorage.getItem('chosenLang')
+      languageSelect.addEventListener('change', function (e) {
+        mlrLangInUse = languageSelect[languageSelect.selectedIndex].value
         resolveAllMLStrings()
 
         if (countryCodes === true) {
@@ -179,11 +162,28 @@ let mlr = function ({
             console.warn('Cannot access strings for language codes')
             return
           }
-          root.setAttribute('lang', mlCodes[0].code)
+          root.setAttribute('lang', updateCountryCodeOnHTML().code)
+        }
+        setLangInStorage()
+      })
+
+      window.onload = function () {
+        if (localStorage.getItem('chosenLang') === 'Polski') {
+          mlrLangInUse = localStorage.getItem('chosenLang')
+          languageSelect.value = localStorage.getItem('chosenLang')
+          mlr.chosenLang = localStorage.getItem('chosenLang')
+          resolveAllMLStrings()
+
+          if (countryCodes === true) {
+            if (!Array.isArray(countryCodeData) || !countryCodeData.length) {
+              console.warn('Cannot access strings for language codes')
+              return
+            }
+            root.setAttribute('lang', mlCodes[0].code)
+          }
         }
       }
-    }
-  })()
+    })()
 
   function setLangInStorage() {
     localStorage.setItem('chosenLang', mlrLangInUse)
