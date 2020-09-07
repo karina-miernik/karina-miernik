@@ -362,7 +362,7 @@ body {
 }
 .projects__container {
   width: 300px;
-  height: 350px;
+  height: 300px;
   cursor: pointer;
   margin: 0.5rem;
   flex-direction: column;
@@ -422,6 +422,12 @@ body {
 .first-project {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('./img/zdrow.png');
+  background-repeat: no-repeat;
+}
+
+.third-project {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./img/weather.png');
   background-repeat: no-repeat;
 }
 /* Contact */
