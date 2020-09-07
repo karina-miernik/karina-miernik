@@ -1,1 +1,2 @@
-# karina-miernik
+# My Portfolio
+👉 https://karina-miernik.github.io/
