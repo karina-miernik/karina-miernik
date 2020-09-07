@@ -49,8 +49,8 @@ body {
 }
 
 .scroll {
-  background-color: rgba(248,244,237, 0.9);
-  box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.75);
+  background-color: rgba(248, 244, 237, 0.9);
+  box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.75);
 }
 
 .menu {
@@ -64,21 +64,21 @@ body {
 }
 
 .menu__link {
-  color: #335D7A;
-padding:0.5rem;
+  color: #335d7a;
+  padding: 0.5rem;
   text-decoration: none;
   font-size: var(--font-size-3);
   transition: all 0.2s ease;
 }
 .menu__link:hover {
   background-color: #e8d4e6;
-  color:#335D7A;
+  color: #335d7a;
 }
 .menu__select {
   padding: 0.75rem;
   background-color: #f8f4ed;
   font-size: var(--font-size-2);
-  color: #335D7A;
+  color: #335d7a;
   outline: none;
   border: none;
   cursor: pointer;
@@ -86,7 +86,6 @@ padding:0.5rem;
   appearance: none;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
 }
-
 
 /* Hero */
 
@@ -200,8 +199,8 @@ padding:0.5rem;
 
 .about__content h2 {
   padding-bottom: 4rem;
-  color: #335D7A;
- text-transform: uppercase;
+  color: #335d7a;
+  text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.25rem;
   font-weight: 800;
@@ -269,8 +268,8 @@ padding:0.5rem;
 .skills__title {
   flex-direction: column;
   padding: 2rem;
-  color: #335D7A;
- text-transform: uppercase;
+  color: #335d7a;
+  text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.25rem;
   font-weight: 800;
@@ -325,7 +324,7 @@ padding:0.5rem;
 /* Projects */
 .projects {
   display: flex;
-/* height:100vh; */
+  /* height:100vh; */
   color: black;
   justify-content: center;
   align-items: center;
@@ -355,14 +354,14 @@ padding:0.5rem;
 .projects__title {
   flex-direction: column;
   padding: 2rem;
-  color: #335D7A;
- text-transform: uppercase;
+  color: #335d7a;
+  text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.25rem;
   font-weight: 800;
 }
 .projects__container {
-  width:300px;
+  width: 300px;
   height: 350px;
   cursor: pointer;
   margin: 0.5rem;
@@ -438,7 +437,6 @@ padding:0.5rem;
 }
 
 .contact__wrapper {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -452,7 +450,7 @@ padding:0.5rem;
 }
 .contact__wrapper h2 {
   padding-bottom: 4vw;
-  color: #335D7A;
+  color: #335d7a;
   font-size: 2.5rem;
   letter-spacing: 0.25rem;
   font-weight: 800;
@@ -473,7 +471,6 @@ padding:0.5rem;
 .contact__me {
   width: 30vw;
   text-align: left;
- 
 }
 .contact__location {
   width: 20vw;
@@ -482,8 +479,8 @@ padding:0.5rem;
 }
 
 .contact__location h3,
-.contact__media h3{
-  color: #335D7A;
+.contact__media h3 {
+  color: #335d7a;
 }
 .contact__media {
   width: 30vw;
@@ -493,7 +490,7 @@ padding:0.5rem;
 
 .fa-github {
   font-size: 2rem;
-  color: #335D7A;
+  color: #335d7a;
   padding: 0.25rem;
   transition: all 0.3s ease;
 }
@@ -503,14 +500,13 @@ padding:0.5rem;
 }
 .contact__media a {
   text-decoration: underline;
-  color: #335D7A;
+  color: #335d7a;
 }
 .contact__media a:hover {
   text-decoration: underline;
   color: #e8d4e6;
 }
 .contact__down {
-
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -522,13 +518,12 @@ padding:0.5rem;
   position: absolute;
   font-size: var(--font-size-2);
   margin-bottom: 1rem;
- 
 }
 
 /* Arrow Up*/
 .scroll__display {
   background-color: #f8f4ed;
-  
+
   border-radius: 50%;
   padding: 0.5rem 0.7rem;
   position: fixed;

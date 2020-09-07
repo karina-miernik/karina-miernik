@@ -28,7 +28,7 @@
     transform: translate(-5%, -50%);
     cursor: pointer;
     z-index: 2;
-    margin-top: 0.5rem; 
+    margin-top: 0.5rem;
     background-color: #fff;
     border-radius: 50%;
     padding: 0.75rem;
@@ -60,15 +60,14 @@
     display: block;
   }
   .scroll {
-   
     box-shadow: none;
   }
-  
+
   .menu {
-   height: 100vh;
+    height: 100vh;
     min-height: 100%;
     position: fixed;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
     width: 100%;
     flex-direction: column;
     clip-path: circle(10px at 90% -10%);
@@ -98,11 +97,11 @@
   }
   .menu__select {
     padding: 0.75rem;
-    background-color: #323140;
+    background-color: transparent;
     color: #e8d4e6;
     font-size: 1.5rem;
   }
- 
+
   /* Title */
   .hero__title {
     width: 50%;
@@ -163,11 +162,11 @@
     padding: 3vw;
     margin: 0 auto;
     width: 90%;
-    height:auto;
+    height: auto;
     text-align: center;
   }
-.skills__title,
-.about__content h2,
+  .skills__title,
+  .about__content h2,
   .projects__title {
     font-size: 2rem;
   }
