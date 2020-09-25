@@ -106,8 +106,8 @@ let MLstrings = [
     Polski: "Aplikacja do wyszukiwania krajów",
   },
   {
-    English: "Countries App build in React (with Hooks)",
-    Polski: "Aplikacja do wyszukiwania krajów zbudowana w Reakcie (z Hook`ami)",
+    English: "Countries App build in React",
+    Polski: "Aplikacja do wyszukiwania krajów zbudowana w Reakcie",
   },
   {
     English: "Visit",
